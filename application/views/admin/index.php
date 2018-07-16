@@ -270,13 +270,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<!--sub-heard-part-->
 									  <div class="sub-heard-part">
 									   <ol class="breadcrumb m-b-0">
-											<li><a href="index.html">Home</a></li>
+											<li><a href="<?php echo site_url('admin/c_admin/') ?>">Home</a></li>
 											<li class="active">Tables</li>
+											
 										</ol>
 									   </div>
 								  <!--//sub-heard-part-->
 									<div class="graph-visual tables-main">
-											<h3 class="inner-tittle two">Colored Rows Table </h3>
+											<h3 class="inner-tittle two">Daftar Pegawai </h3>
+											<a class="btn" data-toggle="modal" data-target="#myUserAdd" >Tambah Data</a>
 														  <div class="graph">
 															<div class="tables">
 																<table class="table table-striped" id="mytable">
@@ -507,7 +509,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--js -->
 
     <script src="<?php echo base_url().'assets/js/jquery-2.1.4.min.js'?>"></script>
-    <script src="<?php echo base_url().'assets/js/bootstrap.js'?>"></script>
     <script src="<?php echo base_url().'assets/js/jquery.datatables.min.js'?>"></script>
     <script src="<?php echo base_url().'assets/js/dataTables.bootstrap.js'?>"></script>
 	<script src="<?php echo base_url().'assets/js/jquery.nicescroll.js'?>"></script>
