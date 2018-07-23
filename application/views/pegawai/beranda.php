@@ -12,7 +12,7 @@
         <!-- Navigation -->
         <nav class="navbar navbar-default navbar-static-top m-b-0">
             <div class="navbar-header"> <a class="navbar-toggle hidden-sm hidden-md hidden-lg " href="javascript:void(0)" data-toggle="collapse" data-target=".navbar-collapse"><i class="fa fa-bars"></i></a>
-                <div class="top-left-part"><a class="logo" href="index.html"><b><img src="../plugins/images/pixeladmin-logo.png" alt="home" /></b><span class="hidden-xs"><img src="../plugins/images/pixeladmin-text.png" alt="home" /></span></a></div>
+                <div class="top-left-part"><a class="logo" href="index.html"><b><img src="<?php echo base_url().'assets/plugins/images/pixeladmin-logo.png'?>" alt="home" /></b><span class="hidden-xs"><img src="<?php echo base_url().'assets/plugins/images/pixeladmin-text.png'?>" alt="home" /></span></a></div>
                 <ul class="nav navbar-top-links navbar-left m-l-20 hidden-xs">
                     <li>
                         <form role="search" class="app-search hidden-xs">
@@ -22,7 +22,7 @@
                 </ul>
                 <ul class="nav navbar-top-links navbar-right pull-right">
                     <li>
-                        <a class="profile-pic" href="#"> <img src="../plugins/images/users/varun.jpg" alt="user-img" width="36" class="img-circle"><b class="hidden-xs"><?php echo $username; ?></b> </a>
+                        <a class="profile-pic" href="#"> <img src="<?php echo base_url().'assets/plugins/images/users/varun.jpg'?>" alt="user-img" width="36" class="img-circle"><b class="hidden-xs"><?php echo $username; ?></b> </a>
                     </li>
                 </ul>
             </div>
@@ -214,17 +214,17 @@
                             <h3 class="box-title">Recent Comments</h3>
                             <div class="comment-center">
                                 <div class="comment-body">
-                                    <div class="user-img"> <img src="../plugins/images/users/pawandeep.jpg" alt="user" class="img-circle"></div>
+                                    <div class="user-img"> <img src="<?php echo base_url().'assets/plugins/images/users/pawandeep.jpg'?>" alt="user" class="img-circle"></div>
                                     <div class="mail-contnet">
                                         <h5>Pavan kumar</h5> <span class="mail-desc">Donec ac condimentum massa. Etiam pellentesque pretium lacus. Phasellus ultricies dictum suscipit. Aenean commodo dui pellentesque molestie feugiat.</span><a href="javacript:void(0)" class="action"><i class="ti-close text-danger"></i></a> <a href="javacript:void(0)" class="action"><i class="ti-check text-success"></i></a><span class="time pull-right">April 14, 2016</span></div>
                                 </div>
                                 <div class="comment-body">
-                                    <div class="user-img"> <img src="../plugins/images/users/sonu.jpg" alt="user" class="img-circle"> </div>
+                                    <div class="user-img"> <img src="<?php echo base_url().'assets/plugins/images/users/sonu.jpg'?>" alt="user" class="img-circle"> </div>
                                     <div class="mail-contnet">
                                         <h5>Sonu Nigam</h5> <span class="mail-desc">Donec ac condimentum massa. Etiam pellentesque pretium lacus. Phasellus ultricies dictum suscipit. Aenean commodo dui pellentesque molestie feugiat.</span><a href="javacript:void(0)" class="action"><i class="ti-close text-danger"></i></a> <a href="javacript:void(0)" class="action"><i class="ti-check text-success"></i></a><span class="time pull-right">April 14, 2016</span></div>
                                 </div>
                                 <div class="comment-body b-none">
-                                    <div class="user-img"> <img src="../plugins/images/users/arijit.jpg" alt="user" class="img-circle"> </div>
+                                    <div class="user-img"> <img src="<?php echo base_url().'assets/plugins/images/users/arijit.jpg'?>" alt="user" class="img-circle"> </div>
                                     <div class="mail-contnet">
                                         <h5>Arijit Sinh</h5> <span class="mail-desc">Donec ac condimentum massa. Etiam pellentesque pretium lacus. Phasellus ultricies dictum suscipit. Aenean commodo dui pellentesque molestie feugiat. </span><a href="javacript:void(0)" class="action"><i class="ti-close text-danger"></i></a> <a href="javacript:void(0)" class="action"><i class="ti-check text-success"></i></a><span class="time pull-right">April 14, 2016</span></div>
                                 </div>
@@ -236,27 +236,27 @@
                             <h3 class="box-title">You have 5 new messages</h3>
                             <div class="message-center">
                                 <a href="#">
-                                    <div class="user-img"> <img src="../plugins/images/users/pawandeep.jpg" alt="user" class="img-circle"> <span class="profile-status online pull-right"></span> </div>
+                                    <div class="user-img"> <img src="<?php echo base_url().'assets/plugins/images/users/pawandeep.jpg'?>" alt="user" class="img-circle"> <span class="profile-status online pull-right"></span> </div>
                                     <div class="mail-contnet">
                                         <h5>Pavan kumar</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:30 AM</span> </div>
                                 </a>
                                 <a href="#">
-                                    <div class="user-img"> <img src="../plugins/images/users/sonu.jpg" alt="user" class="img-circle"> <span class="profile-status busy pull-right"></span> </div>
+                                    <div class="user-img"> <img src="<?php echo base_url().'assets/plugins/images/users/sonu.jpg'?>" alt="user" class="img-circle"> <span class="profile-status busy pull-right"></span> </div>
                                     <div class="mail-contnet">
                                         <h5>Sonu Nigam</h5> <span class="mail-desc">I've sung a song! See you at</span> <span class="time">9:10 AM</span> </div>
                                 </a>
                                 <a href="#">
-                                    <div class="user-img"> <img src="../plugins/images/users/arijit.jpg" alt="user" class="img-circle"> <span class="profile-status away pull-right"></span> </div>
+                                    <div class="user-img"> <img src="<?php echo base_url().'assets/plugins/images/users/arijit.jpg'?>" alt="user" class="img-circle"> <span class="profile-status away pull-right"></span> </div>
                                     <div class="mail-contnet">
                                         <h5>Arijit Sinh</h5> <span class="mail-desc">I am a singer!</span> <span class="time">9:08 AM</span> </div>
                                 </a>
                                 <a href="#">
-                                    <div class="user-img"> <img src="../plugins/images/users/genu.jpg" alt="user" class="img-circle"> <span class="profile-status online pull-right"></span> </div>
+                                    <div class="user-img"> <img src="<?php echo base_url().'assets/plugins/images/users/genu.jpg'?>" alt="user" class="img-circle"> <span class="profile-status online pull-right"></span> </div>
                                     <div class="mail-contnet">
                                         <h5>Genelia Deshmukh</h5> <span class="mail-desc">I love to do acting and dancing</span> <span class="time">9:08 AM</span> </div>
                                 </a>
                                 <a href="#" class="b-none">
-                                    <div class="user-img"> <img src="../plugins/images/users/pawandeep.jpg" alt="user" class="img-circle"> <span class="profile-status offline pull-right"></span> </div>
+                                    <div class="user-img"> <img src="<?php echo base_url().'assets/plugins/images/users/pawandeep.jpg'?>" alt="user" class="img-circle"> <span class="profile-status offline pull-right"></span> </div>
                                     <div class="mail-contnet">
                                         <h5>Pavan kumar</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:02 AM</span> </div>
                                 </a>
@@ -277,21 +277,21 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="<?php echo base_url().'assets/bootstrap/dist/js/bootstrap.min.js'?>"></script>
     <!-- Menu Plugin JavaScript -->
-    <script src="../plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script>
+    <script src="<?php echo base_url().'assets/plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js'?>"></script>
     <!--slimscroll JavaScript -->
     <script src="<?php echo base_url().'assets/js/jquery.slimscroll.js'?>"></script>
     <!--Wave Effects -->
     <script src="<?php echo base_url().'assets/js/waves.js'?>"></script>
     <!--Counter js -->
-    <script src="../plugins/bower_components/waypoints/lib/jquery.waypoints.js"></script>
-    <script src="../plugins/bower_components/counterup/jquery.counterup.min.js"></script>
+    <script src="<?php echo base_url().'assets/plugins/bower_components/waypoints/lib/jquery.waypoints.js'?>"></script>
+    <script src="<?php echo base_url().'assets/plugins/bower_components/counterup/jquery.counterup.min.js'?>"></script>
     <!--Morris JavaScript -->
-    <script src="../plugins/bower_components/raphael/raphael-min.js"></script>
-    <script src="../plugins/bower_components/morrisjs/morris.js"></script>
+    <script src="<?php echo base_url().'assets/plugins/bower_components/raphael/raphael-min.js'?>"></script>
+    <script src="<?php echo base_url().'assets/plugins/bower_components/morrisjs/morris.js'?>"></script>
     <!-- Custom Theme JavaScript -->
     <script src="<?php echo base_url().'assets/js/custom.min.js'?>"></script>
     <script src="<?php echo base_url().'assets/js/dashboard1.js'?>"></script>
-    <script src="../plugins/bower_components/toast-master/js/jquery.toast.js"></script>
+    <script src="<?php echo base_url().'assets/plugins/bower_components/toast-master/js/jquery.toast.js'?>"></script>
     <script type="text/javascript">
     $(document).ready(function() {
         $.toast({
