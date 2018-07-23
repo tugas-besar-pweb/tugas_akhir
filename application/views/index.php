@@ -52,10 +52,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--//login-->
 <!--footer section start-->
 <div class="footer">
-<div class="error-btn">
-		<a class="read fourth" href="index.html">Return to Home</a>
-		</div>
-<p>&copy 2016 Augment . All Rights Reserved | Design by <a href="https://w3layouts.com/" target="_blank">W3layouts.</a></p>
+<p>&copy 2018 Adinda Dwi L. & M. Qolbil Atiq TI-2G</p>
 </div>
 <!--footer section end-->
 <!--/404-->
