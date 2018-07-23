@@ -38,7 +38,7 @@
                         <a class="nav-link " href="<?=site_url()?>/Home/"><i class="fa fa-clock-o fa-fw" aria-hidden="true"></i><span class="hide-menu">Dashboard</span></a>
                     </li>
                     <li>
-                        <a href="profile.html" class="waves-effect"><i class="fa fa-user fa-fw" aria-hidden="true"></i><span class="hide-menu">Profile</span></a>
+                        <a class="nav-link " href="<?=site_url()?>/Home/"><i class="fa fa-user fa-fw" aria-hidden="true"></i><span class="hide-menu">Profile</span></a>
                     </li>
                 </ul>
                 <div class="center p-20">
