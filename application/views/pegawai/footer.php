@@ -1,0 +1,1 @@
+<footer class="footer text-center"> 2018 &copy;Adinda Dwi L.&M.Qolbil Atiq </footer>

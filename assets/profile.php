@@ -1,4 +1,4 @@
-<?php $this->load->view('member/header'); ?>
+<?php $this->load->view('pegawai/header'); ?>
 
 <body>
     <!-- Preloader -->
