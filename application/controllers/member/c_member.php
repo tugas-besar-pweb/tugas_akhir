@@ -10,7 +10,7 @@ class C_member extends CI_Controller {
 	}
 	public function index() {
 		$data['username'] = $this->session->userdata('username');
-		$this->load->view('member/index', $data);
+		$this->load->view('pegawai/beranda', $data);
 	}
 
 	public function logout() {
