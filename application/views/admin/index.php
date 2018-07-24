@@ -18,25 +18,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div class="header-section">
 						<!--menu-right-->
 						<div class="top_menu">
-						        <div class="main-search">
-											<form>
-											   <input type="text" value="Search" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Search';}" class="text"/>
-												<input type="submit" value=""/>
-											</form>
-									<div class="close"><img src="<?php echo base_url().'assets/images/cross.png'?>" /></div>
-								</div>
-									<div class="srch"><button></button></div>
-									<script type="text/javascript">
-										 $('.main-search').hide();
-										$('button').click(function (){
-											$('.main-search').show();
-											$('.main-search text').focus();
-										}
-										);
-										$('.close').click(function(){
-											$('.main-search').hide();
-										});
-									</script>
+						        
 							<!--/profile_details-->
 								<div class="profile_details_left">
 									<ul class="nofitications-dropdown">
@@ -44,7 +26,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 										<li class="dropdown note">
 											<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-envelope-o"></i> <span class="badge">3</span></a>
 
-												
 													<ul class="dropdown-menu two first">
 														<li>
 															<div class="notification_header">
@@ -462,8 +443,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									  <h3><b><?php echo $username; ?></b></h3>
 									 <p>System Administrator</p>
 									<ul>
-									<li><a class="tooltips" href="index.html"><span>Profile</span><i class="lnr lnr-user"></i></a></li>
-										<li><a class="tooltips" href="index.html"><span>Settings</span><i class="lnr lnr-cog"></i></a></li>
 										<li><a class="tooltips" href="<?php echo site_url('admin/c_admin/logout'); ?>"><span>Log out</span><i class="lnr lnr-power-switch"></i></a></li>
 										</ul>
 									</div>

@@ -12,11 +12,11 @@
     <!-- Bootstrap Core CSS -->
     <link href="<?php echo base_url().'assets/bootstrap/dist/css/bootstrap.min.css'?>" rel="stylesheet">
     <!-- Menu CSS -->
-    <link href="../plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet">
+    <link href="<?php echo base_url().'assets/plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css'?>" rel="stylesheet">
     <!-- toast CSS -->
-    <link href="../plugins/bower_components/toast-master/css/jquery.toast.css" rel="stylesheet">
+    <link href="<?php echo base_url().'assets/plugins/bower_components/toast-master/css/jquery.toast.css'?>" rel="stylesheet">
     <!-- morris CSS -->
-    <link href="../plugins/bower_components/morrisjs/morris.css" rel="stylesheet">
+    <link href="<?php echo base_url().'assets/plugins/bower_components/morrisjs/morris.css'?>" rel="stylesheet">
     <!-- animation CSS -->
     <link href="<?php echo base_url().'assets/css/animate.css'?>" rel="stylesheet">
     <!-- Custom CSS -->
