@@ -7,7 +7,27 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
-	<?php $this->load->view('pegawai/header'); ?>
+<title>AdminPage-SI_Absensi_Pegawai</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Augment Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+ <!-- Bootstrap Core CSS -->
+<link href="<?php echo base_url().'assets/css/bootstrap.min.css'?>" rel='stylesheet' type='text/css' />
+	<!-- Custom CSS -->
+<link href="<?php echo base_url().'assets/css/style.css'?>" rel='stylesheet' type='text/css' />
+	<!-- Graph CSS -->
+<link href="<?php echo base_url().'assets/css/font-awesome.css'?>" rel="stylesheet"> 
+	<!-- jQuery -->
+<link href='//fonts.googleapis.com/css?family=Roboto:700,500,300,100italic,100,400' rel='stylesheet' type='text/css'>
+	<!-- lined-icons -->
+<link rel="stylesheet" href="<?php echo base_url().'assets/css/icon-font.min.css'?>" type='text/css' />
+	<!-- /js -->
+<script src="<?php echo base_url().'assets/js/jquery-1.10.2.min.js'?>"></script>
+<!-- //js-->
+<link rel="stylesheet" href="<?=base_url()?>assets/DataTables/datatables.min.css">
+
 </head> 
 <body>
    <div class="page-container">
@@ -21,49 +41,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						        
 							<!--/profile_details-->
 								<div class="profile_details_left">
-									<ul class="nofitications-dropdown">
-									
-										<li class="dropdown note">
-											<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-envelope-o"></i> <span class="badge">3</span></a>
-
-													<ul class="dropdown-menu two first">
-														<li>
-															<div class="notification_header">
-																<h3>You have 3 new messages  </h3> 
-															</div>
-														</li>
-														<li><a href="#">
-														   <div class="user_img"><img src="<?php echo base_url().'assets/images/1.jpg'?>" alt=""></div>
-														   <div class="notification_desc">
-															<p>Lorem ipsum dolor sit amet</p>
-															<p><span>1 hour ago</span></p>
-															</div>
-														   <div class="clearfix"></div>	
-														 </a></li>
-														 <li class="odd"><a href="#">
-															<div class="user_img"><img src="<?php echo base_url().'assets/images/in.jpg'?>" alt=""></div>
-														   <div class="notification_desc">
-															<p>Lorem ipsum dolor sit amet </p>
-															<p><span>1 hour ago</span></p>
-															</div>
-														  <div class="clearfix"></div>	
-														 </a></li>
-														<li><a href="#">
-														   <div class="user_img"><img src="<?php echo base_url().'assets/images/in1.jpg'?>" alt=""></div>
-														   <div class="notification_desc">
-															<p>Lorem ipsum dolor sit amet </p>
-															<p><span>1 hour ago</span></p>
-															</div>
-														   <div class="clearfix"></div>	
-														</a></li>
-														<li>
-															<div class="notification_bottom">
-																<a href="#">See all messages</a>
-															</div> 
-														</li>
-													</ul>
-										</li>
-										
 							<li class="dropdown note">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-bell-o"></i> <span class="badge">5</span></a>
 
@@ -179,7 +156,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								  <!--//sub-heard-part-->
 									<div class="graph-visual tables-main">
 											<h3 class="inner-tittle two">Daftar Pegawai </h3>
-											<!-- <a class="btn" data-toggle="modal" data-target="#myUserAdd" >Tambah Data</a>
+											<a class="btn" data-toggle="modal" data-target="#myUserAdd" >Tambah Data</a>
 														  <div class="graph">
 															<div class="tables">
 																<table class="table table-striped" id="mytable">
@@ -191,102 +168,22 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 																	<th>Action</th> </tr> 
 																</thead> 
 															</table> 
-														</div> -->
-												<a href="<?php echo base_url('index.php/User/create') ?>" class="btn btn-primary my-3">Tambah</a>
-													<table class="table table-hover">
-														<thead>
-															<th>ID</th>
-															<th>Nama</th>
-															<th>NIP</th>
-															<th>Jenis Kelamin</th>
-															<th>Jabatan</th>
-															<th>Status Aktif</th>
-															<th>Action</th>
-														</thead>
-														<tbody>
-															<?php foreach ($user_list as $key => $value): ?>
-																<tr>
-																<td><?php echo $value['id'] ?></td>
-																<td><?php echo $value['nama_pegawai'] ?></td>
-																<td><?php echo $value['nip'] ?></td>
-																<td><?php echo $value['jk'] ?></td>
-																<td><?php echo $value['jabatan'] ?></td>
-																<td><?php echo $value['status_aktif'] ?></td>
-																<td><?php ?></td>
-																<td>
-																	<a href="<?php echo base_url("index.php/User/update/".$value['id']) ?>" class="btn btn-sm btn-success">Edit</a>
-																	<!-- <a href="<?php echo base_url("index.php/User/deleteData/".$value['id']) ?>" class="btn btn-sm btn-danger"> -->
-																	<form id="add-row-form" action="<?php echo base_url().'index.php/admin/User/deleteData'?>" method="post">
-																		<div class="modal fade" id="UserHapus" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-																			<div class="modal-dialog">
-																			<div class="modal-content">
-																				<div class="modal-header">
-																					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-																					<h4 class="modal-title" id="myModalLabel">Hapus User</h4>
-																				</div>
-																				<div class="modal-body">
-																						<input type="hidden" name="uid" class="form-control" placeholder="User ID" required>
-																												<strong>Anda yakin mau menghapus record ini?</strong>
-																				</div>
-																				<div class="modal-footer">
-																						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-																						<button type="submit" id="add-row" class="btn btn-success">Hapus</button>
-																				</div>
-																					</div>
-																			</div>
-																		</div>
-																	</form>
-
-																</td>
-																</tr>
-																
-															<?php endforeach ?>
-														</tbody>
+														</div>
+												
+													</div>
 													<h3 class="inner-tittle two">Responsive Table </h3>
 														  <div class="graph">
 															<div class="tables">
-																<table class="table table-bordered"> 
-																	<thead> 
-																		<tr> 
-																			<th>#</th> 
-																				<th>Table heading</th> 
-																					<th>Table heading</th> 
-																					<th>Table heading</th> 
-																					<th>Table heading</th> 
-																		</tr> 
-																	</thead>
-																	<tbody> 
-																		<tr> 
-																			<th scope="row">1</th> 
-																				<td>Table cell</td> 
-																				<td>Table cell</td> 
-																				<td>Table cell</td> 
-																				<td>Table cell</td> 
-																		</tr> 
-																		<tr> 
-																			<th scope="row">2</th> 
-																				<td>Table cell</td> 
-																				<td>Table cell</td> 
-																				<td>Table cell</td> 
-																				<td>Table cell</td> 
-																		</tr> 
-																		<tr> 
-																			<th scope="row">3</th> 
-																				<td>Table cell</td> 
-																				<td>Table cell</td> 
-																				<td>Table cell</td> 
-																				<td>Table cell</td> 
-																		</tr> 
-																	</tbody> 
-																</table> 
+														
+																<table class="table table-bordered"> <thead> <tr> <th>#</th> <th>Table heading</th> <th>Table heading</th> <th>Table heading</th> <th>Table heading</th> </tr> </thead> <tbody> <tr> <th scope="row">1</th> <td>Table cell</td> <td>Table cell</td> <td>Table cell</td> <td>Table cell</td> </tr> <tr> <th scope="row">2</th> <td>Table cell</td> <td>Table cell</td> <td>Table cell</td> <td>Table cell</td> </tr> <tr> <th scope="row">3</th> <td>Table cell</td> <td>Table cell</td> <td>Table cell</td> <td>Table cell</td> </tr> </tbody> </table> 
 															</div>
-														</div>
-										
+													</div>
+										</div>
 										<!--//graph-visual-->
 									</div>
 									<!--//outer-wp-->
 									<!-- User Add User-->
-      <!-- <form id="add-row-form" action="<?php echo base_url().'index.php/admin/User/simpan'?>" method="post">
+      <form id="add-row-form" action="<?php echo base_url().'index.php/admin/User/simpan'?>" method="post">
          <div class="modal fade" id="myUserAdd" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                <div class="modal-content">
@@ -316,32 +213,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     </div>
             </div>
          </div>
-     </form> -->
-		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-				<?php echo form_open('admin/User/create'); ?>
-				<legend>Tambah Data Pegawai</legend>
-				<?php echo validation_errors(); ?>
-
-				<div class="form-group">
-						<label for="">Nama</label>
-					<input type="text" class="form-control" name="nama" placeholder="Input field">
-						<label for="">NIP</label>
-					<input type="text" class="form-control" name="nip" placeholder="Input field">
-						<label for="">Jenis Kelamin</label>
-					<input type="text" class="form-control" name="jk" placeholder="Input field">
-						<label for="">Jabatan</label>
-					<input type="Date" class="form-control" name="jabatan" placeholder="Input field">
-						<label for="">Status Aktif</label>
-					<input type="Date" class="form-control" name="status_aktif" placeholder="Input field">
-
-				</div>
-				<button type="submit" class="btn btn-primary">submit</button>
-				<?php echo form_close(); ?>
-				</div>
-			
+     </form>
  
      <!-- User Update User-->
-      <!-- <form id="add-row-form" action="<?php echo base_url().'index.php/admin/User/update'?>" method="post">
+      <form id="add-row-form" action="<?php echo base_url().'index.php/admin/User/update'?>" method="post">
          <div class="modal fade" id="UserUpdate" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                <div class="modal-content">
@@ -371,36 +246,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     </div>
             </div>
          </div>
-     </form> -->
-	 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<?php echo form_open('admin/User/update/'.$this->uri->segment(3)); ?>
-			<legend>Edit Data User</legend>
-			<?php echo validation_errors(); ?>
-			<div class="form-group">
-				<label for="">Nama</label>
-				<input type="text" class="form-control" name="nama_pegawai" id="nama_pegawai" value="<?php echo $user[0]->nama_pegawai ?>" placeholder="Input field">
-			</div>
-			<div class="form-group">
-				<label for="">NIP</label>
-				<input type="text" class="form-control" name="nip" id="nip" value="<?php echo $user[0]->nip ?>" placeholder="Input field">
-			</div>
-			<div class="form-group">
-				<label for="">Jenis Kelamin</label>
-				<input type="text" class="form-control" name="jk" id="jk" value="<?php echo $user[0]->jk ?>" placeholder="Input field">
-			</div>
-			<div class="form-group">
-				<label for="">Jabatan</label>
-				<input type="text" class="form-control" name="jabatan" id="jabatan" value="<?php echo $user[0]->jabatan ?>" placeholder="Input field">
-			</div>
-			<div class="form-group">
-				<label for="">Status Aktif</label>
-				<input type="text" class="form-control" name="status_aktif" id="status_aktif" value="<?php echo $user[0]->status_aktif ?>" placeholder="Input field">
-			</div>
-			<button type="submit" class="btn btn-primary">Submit</button>
-			<?php echo form_close(); ?>
-		</div>									
+     </form>
+ 
      <!-- User Hapus User-->
-      <!-- <form id="add-row-form" action="<?php echo base_url().'index.php/admin/User/delete'?>" method="post">
+      <form id="add-row-form" action="<?php echo base_url().'index.php/admin/User/delete'?>" method="post">
          <div class="modal fade" id="UserHapus" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                <div class="modal-content">
@@ -419,7 +268,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     </div>
             </div>
          </div>
-     </form> -->
+     </form>
  
 									 <!--footer section start-->
 										<footer>
