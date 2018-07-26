@@ -41,7 +41,7 @@
 				$this->db->insert('tb_absensi',$data);
 				$this->db->trans_complete(); 
 				echo'<hr><label style="font-size:40px;font-family:calibri">Sukses Melakukan Absensi Kedatangan Pada Pukul:</label><br>';
-				echo'<label style="color:green;font-size:50px;font-family:calibri"><br>'.jammasuk.'</label>';
+				echo'<label style="color:green;font-size:50px;font-family:calibri"><br>'.date("H:i:s").'</label>';
 			}
 		}
 		function cekdatang(){
