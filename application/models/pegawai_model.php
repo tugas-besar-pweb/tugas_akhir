@@ -1,10 +1,10 @@
 <?php
-class Pegawai_model extends CI_Model{ 
+	class pegawai_model extends CI_Model{ 
 
-	function pegawai_model()
-	{
-		parent::__construct();
-	}
+	// function pegawai_model()
+	// {
+	// 	parent::__construct();
+	// }
 	 
 	/* GET DAT APEGAWAI */
 		function cekNikPegawai(){
@@ -14,6 +14,7 @@ class Pegawai_model extends CI_Model{
 		}
 		function cekMasuk(){
 			$nippos=$this->input->post('nippos');
+			date_default_timezone_set('Asia/Jakarta');
 			$datenow=date("Y-m-d");
 			$jammasuk="";
 			$ceknippos=$this->cekNikPegawai();
@@ -26,7 +27,7 @@ class Pegawai_model extends CI_Model{
 				foreach ($query->result() as $data) {
 					$jammasuk=$data->jammasuk;
 				}
-				echo'<hr><label style="font-size:40px;font-family:calibri">Anda Sudah Melakukan Abssnsi Kedatangan Pada Pukul :</label>';
+				echo'<hr><label style="font-size:40px;font-family:calibri">Anda Sudah Melakukan Absensi Kedatangan Pada Pukul :</label>';
 				echo'<label style="color:red;font-size:50px;font-family:calibri"><br>'.$jammasuk.' !!! </label><a href="#" class="more"></a>';
 				return false;
 			}	 else {
@@ -40,7 +41,7 @@ class Pegawai_model extends CI_Model{
 				$this->db->insert('tb_absensi',$data);
 				$this->db->trans_complete(); 
 				echo'<hr><label style="font-size:40px;font-family:calibri">Sukses Melakukan Absensi Kedatangan Pada Pukul:</label><br>';
-				echo'<label style="color:green;font-size:50px;font-family:calibri"><br>'.date("H:i:s").'</label>';
+				echo'<label style="color:green;font-size:50px;font-family:calibri"><br>'.jammasuk.'</label>';
 			}
 		}
 		function cekdatang(){
