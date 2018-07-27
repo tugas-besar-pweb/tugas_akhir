@@ -27,6 +27,16 @@
           	<option>--Pilih Bulan--</option>
           	<option>Jan</option>
           	<option>Feb</option>
+          	<option>Mar</option>
+          	<option>Apr</option>
+          	<option>Mei</option>
+          	<option>Jun</option>
+          	<option>Jul</option>
+          	<option>Aug</option>
+          	<option>Sep</option>
+          	<option>Okt</option>
+          	<option>Nov</option>
+          	<option>Des</option>
           </select>
           <select class="form-control" style="width:300px">
           	<option>--Pilih Tahun--</option>

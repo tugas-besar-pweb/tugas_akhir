@@ -28,6 +28,7 @@ $config['base_url']	= 'http://localhost/tugas_akhir/';
 */
 $config['index_page'] = '';
 
+$config['composer_autoload'] = "vendor/autoload.php";
 /*
 |--------------------------------------------------------------------------
 | URI PROTOCOL

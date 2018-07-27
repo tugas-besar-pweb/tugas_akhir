@@ -25,7 +25,3 @@ class Dashboard extends CI_Controller {
 		$this->load->view('dashboard', $data);
 	}
 }
-
-// Email: kenduanything23@gmail.com
-/* End of file welcome.php */
-/* Location: ./application/controllers/welcome.php */

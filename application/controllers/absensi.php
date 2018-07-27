@@ -24,7 +24,3 @@ class Absensi extends CI_Controller {
 		$this->load->view('absensi/data_absensi', $data);
 	}
 }
-
-// Email: kenduanything23@gmail.com
-/* End of file welcome.php */
-/* Location: ./application/controllers/welcome.php */
