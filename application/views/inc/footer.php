@@ -20,6 +20,12 @@
 
     <!-- membuat efek animasi -->
     <script src="<?php echo base_url(); ?>assets/dist/js/app.min.js" type="text/javascript"></script>
+    <footer class="main-footer">
+      <div class="pull-right hidden-xs">
+        <!-- <b>Version</b> 2.0 -->
+      </div>
+      <strong>Copyright &copy; Adinda-Qolbil</a></strong>
+    </footer>
 
     
     

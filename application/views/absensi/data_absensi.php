@@ -47,7 +47,6 @@
           </select> -->
           <br>
           <!-- <a href="<?php echo base_url()?>index.php/Cetak/index">Lihat Data</a></p> -->
-          
           <a href="<?php echo base_url()?>index.php/Cetak/cetakPdf">Cetak Data</a></p>
 
         </h1>
@@ -110,12 +109,7 @@
         <!-- Main row -->
       </section><!-- /.content -->
     </div><!-- /.content-wrapper -->
-    <footer class="main-footer">
-      <div class="pull-right hidden-xs">
-        <!-- <b>Version</b> 2.0 -->
-      </div>
-      <strong>Copyright &copy; 2015 <a href="#"></a></strong>
-    </footer>
+   
   </div><!-- ./wrapper -->
   <!-- page script -->
   
@@ -124,6 +118,12 @@
     <?php $this->load->view('inc/footer'); ?>
     <script src="<?php echo base_url(); ?>assets/dist/datatables/jquery.dataTables.js" type="text/javascript"></script>
     <script src="<?php echo base_url(); ?>assets/dist/datatables/dataTables.bootstrap.js" type="text/javascript"></script>
+    <!-- <script src="<?php echo base_url(); ?>assets/dist/js/pdfmake.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/plugins/jQuery/jQuery-2.1.3.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/plugins/datatables/jquery.dataTables.js"></script>
+    <script src="<?php echo base_url(); ?>assets/dist/css/buttons.dataTables.min.css" type="text/javascript"></script> -->
+
+                        
     <script type="text/javascript">
       $(function() {
         $("#example1").dataTable();
@@ -136,6 +136,18 @@
           "bAutoWidth": false
         });
       });
+      $(document).ready(function() {
+        $('#example').DataTable( {
+            dom: 'Bfrtip',
+            buttons: [
+                {
+                    extend: 'print',
+                    messageTop: 'This print was produced using the Print button for DataTables'
+                }
+            ]
+        } );
+    } );
+      
             //waktu flash data :v
       $(function(){
       $('#pesan-flash').delay(4000).fadeOut();
