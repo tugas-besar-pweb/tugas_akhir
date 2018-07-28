@@ -2,9 +2,9 @@
 <html>
 <head>
   <link href="<?php echo base_url(); ?>assets/dist/datatables/dataTables.bootstrap.css" rel="stylesheet" type="text/css" />
-  <?php $this->load->view('inc/head'); ?>
-  
+  <?php $this->load->view('inc/head'); ?>  
 </head>
+
 <body class="skin-blue">
   <!-- wrapper di bawah footer -->
   <div class="wrapper">
@@ -134,8 +134,6 @@
           "bSort": true,
           "bInfo": true,
           "bAutoWidth": false
-
-
         });
       });
             //waktu flash data :v
