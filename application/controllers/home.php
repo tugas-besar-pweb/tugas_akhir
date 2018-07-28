@@ -4,6 +4,7 @@ class home extends CI_Controller {
  
 	var $limit=10;
 	var $offset=10;	
+	
 	function index($limit='',$offset=''){		 
 		$this->load->model("pegawai_model");  
 		$data['judul']='';

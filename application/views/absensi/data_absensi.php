@@ -23,7 +23,8 @@
       <section class="content-header">
         <h1>
           <b>DATA KARYAWAN</b>
-          <select class="form-control" style="width:300px">
+          <br>
+          <!-- <select class="form-control" style="width:300px">
           	<option>--Pilih Bulan--</option>
           	<option>Jan</option>
           	<option>Feb</option>
@@ -40,10 +41,14 @@
           </select>
           <select class="form-control" style="width:300px">
           	<option>--Pilih Tahun--</option>
-          	<option>2015</option>
           	<option>2016</option>
-          </select><br>
-          <button type="submit" class="btn btn-success">Lihat Data</button> <button type="submit" class="btn btn-warning"><i class="fa fa-print"> Cetak</i></button>
+          	<option>2017</option>
+            <option>2018</option>
+          </select> -->
+          <br>
+          <!-- <a href="<?php echo base_url()?>index.php/Cetak/index">Lihat Data</a></p> -->
+          
+          <a href="<?php echo base_url()?>index.php/Cetak/cetakPdf">Cetak Data</a></p>
 
         </h1>
           <!-- <ol class="breadcrumb">
@@ -69,7 +74,7 @@
                   <thead>
                     <tr>
                       <th>NO</th>
-                      <th>NIP POS</th>
+                      <th>NIP</th>
                       <th>NAMA</th>
                       <th>JABATAN</th>
                       <th>TANGGAL</th>
@@ -86,11 +91,12 @@
                       <td><?php echo $row['jabatan']; ?></td>
                       <td><?php echo $row['tanggal']; ?></td>
                       <td><?php echo $row['jammasuk']; ?></td>
-                      <td><?php if ($row['kodeabsensi'] == 1) { ?>
-						<h4><span class="label label-success">Masuk</span></h4>
-                      <?php } else { ?>
-                      <h4><span style="text-fonts:16px" class="label label-danger">Pulang</span></h4>
-                      <?php } ?>
+                      <td>
+                        <?php if ($row['kodeabsensi'] == 1) { ?>
+						              <h4><span class="label label-success">Masuk</span></h4>
+                        <?php } else { ?>
+                          <h4><span style="text-fonts:16px" class="label label-danger">Pulang</span></h4>
+                        <?php } ?>
                       </td>
                       
                     </tr>
@@ -128,8 +134,6 @@
           "bSort": true,
           "bInfo": true,
           "bAutoWidth": false
-
-
         });
       });
             //waktu flash data :v

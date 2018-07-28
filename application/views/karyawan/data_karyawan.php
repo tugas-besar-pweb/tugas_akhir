@@ -47,7 +47,7 @@
                   <thead>
                     <tr>
                       <th>NO</th>
-                      <th>NIP POS</th>
+                      <th>NIP</th>
                       <th>NAMA</th>
                       <th>JABATAN</th>
                       <th>PEKERJAAN</th>

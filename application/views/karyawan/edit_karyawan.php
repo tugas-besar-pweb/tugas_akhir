@@ -48,7 +48,7 @@
                   <form role="form" action="<?php echo base_url(); ?>karyawan/updatekaryawan" method="POST" enctype="multipart/form-data">
                   <div class="col-lg-6">
                     <div class="form-group">
-                      <label for="">NIP POS</label>
+                      <label for="">NIP</label>
                         <input type="hidden" class="form-control" value="<?php echo $id_kar; ?>" id="" name="id_kar" placeholder="Isika" required>
                         <input type="hidden" class="form-control" value="<?php echo $tgl_input_kar; ?>" id="" name="tgl_input_kar" placeholder="Isikan" required>
                         <input type="text" class="form-control" value="<?php echo $nippos; ?>" id="" name="nippos" placeholder="" required>

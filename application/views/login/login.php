@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Halaman Login | POS</title>
+    <title>Halaman Login Absensi</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <!-- Bootstrap 3.3.2 -->
     <!-- Bootstrap 3.3.2 -->
@@ -29,11 +29,11 @@
         <form action="<?php echo base_url(); ?>login/proseslog" id="form-login" method="post" accept-charset="utf-8">
           <div class="form-group has-feedback">
             <input type="text" class="form-control" name="nama_user" id="nama_user" placeholder="Nama Pengguna" required/>
-            <span class="glyphicon glyphicon-user form-control-feedback"></span>
+            </span>
           </div>
           <div class="form-group has-feedback">
             <input type="password" class="form-control" value="" name="pass_user" id="pass_user" placeholder="Password" required/>
-            <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+            </span>
           </div>
           <div class="row">
             

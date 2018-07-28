@@ -1,6 +1,6 @@
 <header class="main-header">
         <!-- Logo -->
-        <a href="<?php echo base_url(); ?>dashboard" class="logo"><b>Admin</b>POS</a>
+        <a href="<?php echo base_url(); ?>dashboard" class="logo"><b>Admin</b></a>
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top" role="navigation">
           <!-- Sidebar toggle button-->
@@ -10,12 +10,12 @@
           <div class="navbar-custom-menu">
             <ul class="nav navbar-nav">
               <!-- Messages: style can be found in dropdown.less-->
-              <li class="dropdown messages-menu">
+              <!-- <li class="dropdown messages-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   <i class="fa fa-envelope-o"></i>
                   <span class="label label-success">4</span>
                 </a>
-              </li>
+              </li> -->
               
               <!-- User Account: style can be found in dropdown.less -->
               <li class="dropdown user user-menu">

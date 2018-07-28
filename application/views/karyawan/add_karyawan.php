@@ -48,7 +48,7 @@
                   <form role="form" action="<?php echo base_url(); ?>karyawan/savedata" method="POST" enctype="multipart/form-data">
                   <div class="col-lg-6">
                     <div class="form-group">
-                      <label for="">NIP POS</label>
+                      <label for="">NIP</label>
                         <input type="text" class="form-control" value="" id="" name="nippos" placeholder="" required>
                     </div>
 
@@ -108,8 +108,6 @@
     </footer>
   </div><!-- ./wrapper -->
   <!-- page script -->
-  
-
     
     <?php $this->load->view('inc/footer'); ?>
 </body>

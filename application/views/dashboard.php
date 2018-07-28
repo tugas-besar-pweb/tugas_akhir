@@ -38,13 +38,13 @@
               <!-- small box -->
               <div class="small-box bg-green">
                 <div class="inner">
-                  <h3>12</h3>
-                  <p><b>TOTAL KARYAWAN</b></p>
+                  <h4> Ini merupakan halaman admin pengelola data karyawan dan absen </h4>
+                  <p><b>TOTAL KARYAWAN :</b></p>
                 </div>
                 <div class="icon">
                   <i class="fa fa-users"></i>
                 </div>
-                <a href="#" class="small-box-footer">Lihat <i class="fa fa-arrow-circle-right"></i></a>
+                <a href="<? echo base_url()?>index.php/karyawan/"class="small-box-footer">Lihat <i class="fa fa-arrow-circle-right"></i></a>
               </div>
             </div><!-- ./col -->
 
@@ -54,53 +54,7 @@
             <!-- Left col -->
             <section class="col-lg-12 connectedSortable">
               <!-- Chat box -->
-              <div class="box box-success">
-                <div class="box-header">
-                  <i class="fa fa-comments-o"></i>
-                  <h3 class="box-title">Info Pos Pelaihari</h3>
-                </div>
-                <div class="box-body chat" id="chat-box">
-                  <!-- chat item -->
-                  <div class="item">
-                    <img src="<?php echo base_url(); ?>assets/dist/img/user4-128x128.jpg" alt="user image" class="online"/>
-                    <p class="message">
-                      <a href="#" class="name">
-                        <small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 2:15</small>
-                        Mike Doe
-                      </a>
-                      I would like to meet you to discuss the latest news about
-                      the arrival of the new theme. They say it is going to be one the
-                      best themes on the market
-                    </p>
-                  </div><!-- /.item -->
-                  <!-- chat item -->
-                  <div class="item">
-                    <img src="<?php echo base_url(); ?>assets/dist/img/user3-128x128.jpg" alt="user image" class="offline"/>
-                    <p class="message">
-                      <a href="#" class="name">
-                        <small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 5:15</small>
-                        Alexander Pierce
-                      </a>
-                      I would like to meet you to discuss the latest news about
-                      the arrival of the new theme. They say it is going to be one the
-                      best themes on the market
-                    </p>
-                  </div><!-- /.item -->
-                  <!-- chat item -->
-                  <div class="item">
-                    <img src="<?php echo base_url(); ?>assets/dist/img/user2-160x160.jpg" alt="user image" class="offline"/>
-                    <p class="message">
-                      <a href="#" class="name">
-                        <small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 5:30</small>
-                        Susan Doe
-                      </a>
-                      I would like to meet you to discuss the latest news about
-                      the arrival of the new theme. They say it is going to be one the
-                      best themes on the market
-                    </p>
-                  </div><!-- /.item -->
-                </div><!-- /.chat -->
-              </div><!-- /.box (chat box) -->
+
             </section><!-- /.Left col -->
             <!-- right col (We are only adding the ID to make the widgets sortable)-->
             <section class="col-lg-5 connectedSortable">
