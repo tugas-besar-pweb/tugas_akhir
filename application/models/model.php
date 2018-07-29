@@ -36,7 +36,15 @@ class Model extends CI_Model {
 	}
 
 	public function GetDetAbsensi($where = ""){
-		return $this->db->query("select tb_absensi.*, tb_karyawan.* from tb_karyawan inner join tb_absensi on tb_absensi.nippos=tb_karyawan.nippos join tb_jabatan on tb_karyawan.id_jab=tb_jabatan.id_jab $where;");
+		return $this->db->query("
+		select a.jammasuk, a.tanggal, k.nama_kar, j.jabatan
+		from tb_karyawan k 
+		inner join tb_absensi a
+		on a.nippos=k.nippos 
+		join tb_jabatan j
+		on k.id_jab=j.id_jab 
+		$where;"
+		);
 	}
 
 	public function count_all() {

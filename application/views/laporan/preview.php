@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Laporan</title>
-<style>
+<!-- <style>
 	table{
 		border-collapse: collapse;
 		width: 70%;
@@ -20,7 +20,7 @@
 		vertical-align: top;
 	}
 
-</style>
+</style> -->
 </head>
 
 <body>
@@ -49,12 +49,13 @@
                       <td><?php echo $row['jammasuk']; ?></td>
                       <td>
                         <?php if ($row['kodeabsensi'] == 1) { ?>
-						              <h4><span class="label label-success">Masuk</span></h4>
+						              <h4>Masuk</h4>
                         <?php } else { ?>
-                          <h4><span style="text-fonts:16px" class="label label-danger">Pulang</span></h4>
+                          <h4>Pulang</h4>
                         <?php } ?>
                       </td>
-                      
+                      <!-- <span class="label label-success"></span> -->
+                      <!-- <span style="text-fonts:16px" class="label label-danger"></span> -->
                     </tr>
                     <?php } ?>
                   </tbody>

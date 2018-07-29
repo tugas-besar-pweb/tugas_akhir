@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Laporan</title>
-	<style>
+	<!-- <style>
 		table{
 			border-collapse: collapse;
 			width: 100%;
@@ -19,7 +19,7 @@
 			padding: 3px;
 			vertical-align: top;
 		}
-	</style>
+	</style> -->
 </head>
 
 <body>
@@ -34,6 +34,26 @@
             <th>JAM</th>
             <th>STATUS</th>
 		</tr>
+		<?php $no=0; foreach ($data_absensi as $key) {
+			$no++;
+			?>
+			<tr>
+				<td><?php echo $key->no ?></td>
+				<td><?php echo $key->nippos ?></td>
+				<td><?php echo $key->nama ?></td>
+				<td><?php echo $key->jabatan ?></td>
+				<td><?php echo $key->tanggal ?></td>
+				<td><?php echo $key->jam ?></td>
+				<!-- <td><?php echo $key->status ?></td> -->
+				<td>
+                        <?php if ($row['kodeabsensi'] == 1) { ?>
+						              <h4>Masuk</h4>
+                        <?php } else { ?>
+                          <h4>Pulang</h4>
+                        <?php } ?>
+                      </td>
+			</tr>
+		<?php } ?>
 	</table>
 </body>
 

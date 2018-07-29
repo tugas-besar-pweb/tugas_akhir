@@ -13,8 +13,8 @@ class Cetak extends CI_Controller {
 
 	public function index()
 	{
-		$data['data_absensi']=$this->model->view_row();
-		$this->load->view('laporan/preview',$data);
+		// $data['data_absensi']=$this->model->view_row();
+		// $this->load->view('laporan/preview',$data);
 	}
 
 	public function cetakPdf()
@@ -28,7 +28,7 @@ class Cetak extends CI_Controller {
 		// $html = $this->output->get_output();
 
 		$this->load->model('model');
-		$tampil['isi']=$this->model->GetDetAbsensi($where="");
+		$tampil['data_absensi']=$this->model->GetDetAbsensi($where="");
 		$this->load->view('laporan/print',$tampil);
 		$paper_size='A4';
 		$orientation='landscape';
