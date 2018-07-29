@@ -39,7 +39,7 @@
               <div class="small-box bg-green">
                 <div class="inner">
                   <h4> Ini merupakan halaman admin pengelola data karyawan dan absen </h4>
-                  <p><b>TOTAL KARYAWAN :</b></p>
+                  <p><b></b></p>
                 </div>
                 <div class="icon">
                   <i class="fa fa-users"></i>

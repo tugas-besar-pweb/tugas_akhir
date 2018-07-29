@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html><head>
 	<title>Laporan</title>
 	<!-- <style>
 		table{
@@ -8,7 +7,7 @@
 			width: 100%;
 			margin: 0 auto;
 		}
-		table th{
+		table td{
 			border:1px solid #000;
 			padding: 3px;
 			font-weight: bold;
@@ -20,9 +19,7 @@
 			vertical-align: top;
 		}
 	</style> -->
-</head>
-
-<body>
+</head><body>
 	<p style="text-align: center">Laporan Pegawai</p>
 	<table>
 		<tr>
@@ -49,6 +46,4 @@
 			</tr>
 		<?php } ?>
 	</table>
-</body>
-
-</html>
+</body></html>

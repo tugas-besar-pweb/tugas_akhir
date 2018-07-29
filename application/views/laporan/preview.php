@@ -22,7 +22,6 @@
 
 </style> -->
 </head>
-
 <body>
 	<p style="text-align: center">Laporan Pegawai</p>
 	<div class="box-body">
@@ -62,7 +61,5 @@
                 </table>
               </div>
 			  <p style="text-align: center"><a href="<? echo base_url()?>index.php/Cetak/cetakPdf">Cetak Data</a></p>
-
 </body>
-
 </html>

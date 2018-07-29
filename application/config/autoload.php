@@ -38,8 +38,9 @@
 */
 
 $autoload['packages'] = array();
-
-
+// spl_autoload_register(function($class) {
+//     include 'classes/' . $class . '.class.php';
+// });
 /*
 | -------------------------------------------------------------------
 |  Auto-load Libraries
