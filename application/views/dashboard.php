@@ -44,7 +44,7 @@
                 <div class="icon">
                   <i class="fa fa-users"></i>
                 </div>
-                <a href="<? echo base_url()?>index.php/karyawan/"class="small-box-footer">Lihat <i class="fa fa-arrow-circle-right"></i></a>
+                <a href="<?php echo base_url()?>index.php/karyawan/"class="small-box-footer">Lihat <i class="fa fa-arrow-circle-right"></i></a>
               </div>
             </div><!-- ./col -->
 

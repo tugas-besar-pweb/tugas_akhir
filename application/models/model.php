@@ -7,7 +7,7 @@ class Model extends CI_Model {
 	public function __construct()
 	{
 		parent::__construct();
-		
+
 	}
 
 	//ambil data user
@@ -36,15 +36,13 @@ class Model extends CI_Model {
 	}
 
 	public function GetDetAbsensi($where = ""){
-		return $this->db->query("
-		select a.jammasuk, a.tanggal, k.nama_kar, j.jabatan
-		from tb_karyawan k 
-		inner join tb_absensi a
-		on a.nippos=k.nippos 
-		join tb_jabatan j
-		on k.id_jab=j.id_jab 
-		$where;"
-		);
+		$data = $this->db->query('SELECT a.jammasuk, a.tanggal, k.nama_kar, j.jabatan
+															FROM tb_karyawan k
+															INNER JOIN tb_absensi a
+															ON (a.nippos=k.nippos)
+															JOIN tb_jabatan j
+															ON (k.id_jab=j.id_jab)'.$where);
+		return $data->result();
 	}
 
 	public function count_all() {
@@ -92,7 +90,7 @@ class Model extends CI_Model {
 
  //    //model untuk visitor/pengunjung
  //    function GetVisitor($where = ""){
-	// 	return $this->db->query("select * from tb_visitor $where");		
+	// 	return $this->db->query("select * from tb_visitor $where");
 	// }
 
 	function GetProductView(){
