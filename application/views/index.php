@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>ABSENSI</title>
+    <title>SI Absensi Pegawai</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -23,7 +23,7 @@
   <body>
 <div id="infodlg" style="display:none"></div> 
     <header class="dark_grey"> <!-- Header start -->
-        <a href="#" class="logo_image"><span class="hidden-480">ABSENSI</span></a>
+        <a href="#" class="logo_image"><span class="hidden-480">Absensi Pegawai</span></a>
         <ul class="header_actions pull-left hidden-480 hidden-768">
             <li rel="tooltip" data-placement="bottom" title="Hide/Show main navigation" ><a href="#" class="hide_navigation"><i class="icon-chevron-left"></i></a></li>
             <li rel="tooltip" data-placement="right" title="Change navigation color scheme" class="color_pick navigation_color_pick"><a class="iconic" href="#"><i class="icon-th"></i></a>

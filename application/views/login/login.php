@@ -33,7 +33,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 														<h3 class="inner-tittle t-inner">Login</h3>
 																
 
- <form action="<?php echo base_url(); ?>login/proseslog" id="form-login" method="post" accept-charset="utf-8">
+ <form action="<?php echo site_url(); ?>login/proseslog" id="form-login" method="post" accept-charset="utf-8">
           <div class="form-group has-feedback">
             <input type="text" class="form-control" name="nama_user" id="nama_user" placeholder="Nama Pengguna" required/>
             </span>
@@ -42,7 +42,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <input type="password" class="form-control" value="" name="pass_user" id="pass_user" placeholder="Password" required/>
             </span>
           </div>
-          <div class="row">		<div class="submit"><input placeholder="Login"type="submit"></div>
+          <div class="row">
+          <?php if(!empty($this->session->userdata('info'))) {echo $this->session->userdata('info');}?>
+          
+          <div class="submit"><input placeholder="Login"type="submit"></div>
+          </form>
 </div>
 
 														

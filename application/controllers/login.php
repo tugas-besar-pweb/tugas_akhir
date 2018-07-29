@@ -20,7 +20,7 @@ class Login extends CI_Controller {
 			// $data['body']=$this->load->view('v_login', $sub_data, TRUE);
 			$this->load->view('login/login', $sub_data);
 
-			$this->session->unset_userdata('info');       
+			//$this->session->unset_userdata('info');       
 		}
 	}
 
@@ -34,6 +34,7 @@ class Login extends CI_Controller {
 		if ($hasil->num_rows() == 1) {
 			foreach ($hasil->result() as $sess) {
 				// $sess_data['logged_in'] = 'Sudah Loggin';
+				$this->session->unset_userdata('info');  
 				$sess_data['id_user'] = $sess->id_user;
 				$sess_data['nama_user'] = $sess->nama_user;
 				$sess_data['nama'] = $sess->nama;
